@@ -22,7 +22,7 @@ To equip national and provincial leadership with accurate, timely, and actionabl
 This enables evidence-based strategic planning and effective resource deployment.
 
 **Primary Data Source:**
-`**_Md_water_services_data.xlsx_**`  
+`Md_water_services_data.xlsx`  
 Contains detailed data on water sources, project visits, infrastructure costs, and implementation progress.
 
 # Key Features & Visuals:
@@ -30,7 +30,7 @@ Contains detailed data on water sources, project visits, infrastructure costs, a
 High-level summaries of population access to water, segmented by province and by rural vs. urban areas.
 
 **Water Access Challenges:**
-Visualization of affected populations and water source issues, with optional de-emphasis of less critical sources (e.g., `**_tap_in_homes_**`) for strategic clarity.
+Visualization of affected populations and water source issues, with optional de-emphasis of less critical sources (e.g., `tap_in_homes`) for strategic clarity.
 
 **Upgrade Costs & Budget Allocations:**
 Breakdown of upgrade needs and associated costs by province, area type (rural/urban), and improvement category.
