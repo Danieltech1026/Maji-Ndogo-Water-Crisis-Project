@@ -63,7 +63,7 @@ Transparent view of committed funds and their tangible outputs, reinforcing acco
 
 ### 2. **Maji Ndogo Public Dashboard** *(For Public Project Monitoring)*
 
-**Description:**
+<img width="610" height="335" alt="Image" src="https://github.com/user-attachments/assets/3b5d5f5a-d6c7-4de0-8fad-0d3d2c808869" />
 
 This **public-facing dashboard** offers transparent insights into the **financial performance** and **progress** of water infrastructure projects across Maji Ndogo. It is designed for **citizens**, **civil society**, **journalists**, and **external stakeholders** to monitor **budget adherence**, **project status**, and **regional distribution** of improvements.
 
