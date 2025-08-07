@@ -59,3 +59,85 @@ Pinpoints specific problems (e.g., broken boreholes, contamination) and the popu
 
 **Financial Accountability:**
 Transparent view of committed funds and their tangible outputs, reinforcing accountability and trust.
+
+
+### 2. **Maji Ndogo Public Dashboard** *(For Public Project Monitoring)*
+
+**Description:**
+
+This **public-facing dashboard** offers transparent insights into the **financial performance** and **progress** of water infrastructure projects across Maji Ndogo. It is designed for **citizens**, **civil society**, **journalists**, and **external stakeholders** to monitor **budget adherence**, **project status**, and **regional distribution** of improvements.
+
+**Purpose:**
+
+To enhance **public accountability** by:
+- Tracking **actual spending vs. allocated budgets**  
+- Visualizing **project progress** and **completion rates**  
+- Highlighting **geographic** and **vendor-level** trends
+
+**Primary Data Source:**
+- `Md_water_services_data(public).xlsx`, using structured tables or imported CSVs:
+  - `project_progress.csv`: Core **project details**, **completion dates**, **budgeted and actual costs**, and **status**
+  - `infrastructure_cost.csv`: **Standard** and **rural-adjusted** unit costs
+  - `location.csv`: **Geographic data** for towns and regions
+  - `vendors.csv`: Vendor participation information
+
+**Key Features & Visuals:**
+
+- **Cumulative Budget & Cost Line Chart**  
+  Visual comparison of **total budgeted vs. actual expenditure** over time.
+
+- **KPI Cards (At-a-Glance Metrics):**
+  - **Cumulative Budget**: Total allocated budget (e.g., **$146,737,375**)  
+  - **Cumulative Cost**: Total actual expenditure (e.g., **$154,493,298**)  
+  - **Cost Difference**: Highlights **under- or over-spending**  
+  - **Total Projects in Backlog**  
+  - **Completed Projects**
+
+- **Project Status Bar Chart**  
+  Breakdown of project statuses (e.g., **Backlog** vs. **Completed**).
+
+- **Projects by Town/Location Chart**  
+  Distribution of projects across **towns and regions**.
+
+- **Projects by Improvement Type**  
+  Categories such as **“Drill Well”**, **“Install Pump”**, etc.
+
+- **Projects by Vendor**  
+  Shows the number of projects by **vendor involvement**.
+
+- **Interactive Filters (Slicers):**
+  - **Date Range Slicer**  
+  - **Town Slicer**
+
+**Key Insights Delivered:**
+
+- **Budget vs. Actual Spend**  
+  Tracks whether projects adhere to their **allocated budgets** or **overspend**.
+
+- **Project Progress Monitoring**  
+  Visibility into the **delivery pipeline** from **backlog to completion**.
+
+- **Geographic Distribution**  
+  Identifies areas with **high project activity** or **underserved needs**.
+
+- **Resource Allocation Trends**  
+  Highlights **prioritized improvements** and **active vendors**.
+
+**Data Model Highlights:**
+
+- **Dedicated Date Table**  
+  Enables robust **time intelligence** via `date_of_completion`.
+
+- **Calculated Columns:**
+  - `**budgeted_improvement_cost**`: Computes per-project budgets with **rural adjustments**
+  - `**rural_adjusted_cost**` *(in `infrastructure_cost.csv`)*: Formula — `unit_cost_USD * 1.5`
+  - `**aggregated_improvements**`: Groups similar types (e.g., **“Install 1–8 taps”** → **“Install public tap(s)*”**)
+  - `**average_queue_time**` *(in `water_source`)*: Assesses queue times
+  - `**basic_water_access**` *(in `water_source`)*: Classifies sources as **‘Basic’** or **‘Below Basic’** based on **UN standards**
+
+- **Custom DAX Measures:**
+  - `**cumulative_budget**`, `**cumulative_cost**`  
+  - `**basic_water_access_percentage**`  
+  - `**project_count_backlog**`, `**project_count_completed**`  
+  - `**cost_difference**`
+
