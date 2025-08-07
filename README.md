@@ -6,7 +6,8 @@ This repository contains two integrated Power BI dashboard that offer in-depth i
 This project features two distinct Power BI dashboards designed to support both strategic leadership and public transparency:
 
 # 1. Maji Ndogo Stakeholders Dashboard (For Decision-Makers)
-Description:
+<img width="604" height="338" alt="Image" src="https://github.com/user-attachments/assets/392ac5b2-d44e-4194-938e-5fdc304e8dd9" />
+
 This dashboard is tailored for key decision-makers including President Aziza Naledi and provincial leaders by delivering critical insights into the state of water access, infrastructure needs, and financial performance. It supports informed decision-making through actionable data and dynamic visualizations.
 
 **Purpose:**
