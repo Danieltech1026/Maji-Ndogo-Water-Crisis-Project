@@ -22,7 +22,7 @@ To equip national and provincial leadership with accurate, timely, and actionabl
 This enables evidence-based strategic planning and effective resource deployment.
 
 **Primary Data Source:**
-**_Md_water_services_data.xlsx_**  
+`**_Md_water_services_data.xlsx_**`  
 Contains detailed data on water sources, project visits, infrastructure costs, and implementation progress.
 
 # Key Features & Visuals:
@@ -30,7 +30,7 @@ Contains detailed data on water sources, project visits, infrastructure costs, a
 High-level summaries of population access to water, segmented by province and by rural vs. urban areas.
 
 **Water Access Challenges:**
-Visualization of affected populations and water source issues, with optional de-emphasis of less critical sources (e.g., **_tap_in_homes_**) for strategic clarity.
+Visualization of affected populations and water source issues, with optional de-emphasis of less critical sources (e.g., `**_tap_in_homes_**`) for strategic clarity.
 
 **Upgrade Costs & Budget Allocations:**
 Breakdown of upgrade needs and associated costs by province, area type (rural/urban), and improvement category.
@@ -129,15 +129,15 @@ To enhance **public accountability** by:
   Enables robust **time intelligence** via `date_of_completion`.
 
 - **Calculated Columns:**
-  - `**budgeted_improvement_cost**`: Computes per-project budgets with **rural adjustments**
-  - `**rural_adjusted_cost**` *(in `infrastructure_cost.csv`)*: Formula — `unit_cost_USD * 1.5`
-  - `**aggregated_improvements**`: Groups similar types (e.g., **“Install 1–8 taps”** → **“Install public tap(s)*”**)
-  - `**average_queue_time**` *(in `water_source`)*: Assesses queue times
-  - `**basic_water_access**` *(in `water_source`)*: Classifies sources as **‘Basic’** or **‘Below Basic’** based on **UN standards**
+  - `budgeted_improvement_cost`: Computes per-project budgets with **rural adjustments**
+  - `rural_adjusted_cost` (in `infrastructure_cost.csv`): Formula — `unit_cost_USD * 1.5`
+  - `aggregated_improvements`: Groups similar types (e.g., **“Install 1–8 taps”** → **“Install public tap(s)*”**)
+  - `average_queue_time` (in `water_source`): Assesses queue times
+  - `basic_water_access` (in `water_source`): Classifies sources as **‘Basic’** or **‘Below Basic’** based on **UN standards**
 
 - **Custom DAX Measures:**
-  - `**cumulative_budget**`, `**cumulative_cost**`  
-  - `**basic_water_access_percentage**`  
-  - `**project_count_backlog**`, `**project_count_completed**`  
-  - `**cost_difference**`
+  - `cumulative_budget`, `cumulative_cost`  
+  - `basic_water_access_percentage`  
+  - `project_count_backlog`, `project_count_completed`  
+  - `cost_difference`
 
